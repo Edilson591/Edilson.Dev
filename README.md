@@ -1,23 +1,28 @@
-# Portfólio Edilson Luciano
+# Edilson.Dev
 
-Portfólio pessoal desenvolvido com React, TypeScript, Vite e Tailwind CSS. O projeto apresenta informações profissionais, habilidades técnicas, experiências, projetos em destaque e formulário de contato integrado ao EmailJS.
+Portfólio pessoal de Edilson Luciano, desenvolvido para apresentar minha trajetória como desenvolvedor Full-Stack, principais habilidades, experiências profissionais, projetos em destaque e canais de contato.
 
-## Demonstração
+🔗 **Acesse o projeto online:** [devedilson.com.br](https://devedilson.com.br/)
 
-O projeto possui uma versão estática gerada em `dist/`, pronta para publicação em serviços como GitHub Pages, Vercel, Netlify ou outro provedor de hospedagem estática.
+![Preview do portfólio](public/Imagens/portfolio-screenshot-1.png)
+
+## Sobre o Projeto
+
+Este projeto foi criado com foco em performance, responsividade e boa experiência do usuário. A interface conta com animações suaves, alternância entre tema claro e escuro, suporte a português e inglês, seção de projetos com modal de detalhes e formulário de contato integrado ao EmailJS.
 
 ## Funcionalidades
 
-- Layout responsivo para desktop e dispositivos móveis
+- Layout responsivo para desktop, tablet e mobile
 - Tema claro e escuro com persistência no navegador
-- Alternância de idioma entre português e inglês
-- Seções de apresentação, sobre, habilidades, projetos, experiência e contato
+- Tradução entre português e inglês
+- Seções de início, sobre, habilidades, projetos, experiência e contato
+- Cards de projetos com imagens, detalhes, demo e código-fonte
+- Modal com galeria de imagens dos projetos
 - Animações com Framer Motion
-- Formulário de contato com EmailJS
+- Formulário de contato integrado ao EmailJS
 - Download de currículo em PDF
-- Cards de projetos com detalhes, imagens, link de demo e repositório
 
-## Tecnologias Utilizadas
+## Tecnologias
 
 - React
 - TypeScript
@@ -28,16 +33,26 @@ O projeto possui uma versão estática gerada em `dist/`, pronta para publicaç�
 - EmailJS
 - React Toastify
 
+## Preview
+
+| Início | Projetos |
+| --- | --- |
+| ![Tela inicial](public/Imagens/portfolio-screenshot-1.png) | ![Seção de projetos](public/Imagens/portfolio-screenshot-3.png) |
+
+| Sobre | Contato |
+| --- | --- |
+| ![Seção sobre](public/Imagens/portfolio-screenshot-2.png) | ![Seção contato](public/Imagens/portfolio-screenshot-4.png) |
+
 ## Estrutura do Projeto
 
 ```text
 src/
   components/
     layout/       Componentes de estrutura, como Navbar, Footer e Container
-    shared/       Componentes reutilizáveis de seções e cards
+    shared/       Componentes reutilizáveis, cards, título de seção e modal
     ui/           Componentes de interface, botões, badges, toast e toggles
   context/
-    Transalation/ Contexto e textos para tradução PT/EN
+    Transalation/ Contexto e textos de tradução PT/EN
   data/           Dados de projetos, habilidades e experiências
   hooks/          Hooks de tema, seção ativa e posição de scroll
   sections/       Seções principais da página
@@ -46,25 +61,18 @@ src/
   utils/          Funções utilitárias
 ```
 
-## Pré-requisitos
-
-Antes de começar, é necessário ter instalado:
-
-- Node.js
-- npm
-
-## Como Executar o Projeto
+## Como Executar Localmente
 
 Clone o repositório:
 
 ```bash
-git clone https://github.com/edilson591/seu-repositorio.git
+git clone https://github.com/Edilson591/Edilson.Dev.git
 ```
 
 Acesse a pasta do projeto:
 
 ```bash
-cd seu-repositorio
+cd Edilson.Dev
 ```
 
 Instale as dependências:
@@ -93,36 +101,37 @@ Acesse no navegador:
 http://localhost:5173
 ```
 
-## Scripts Disponíveis
+## Scripts
 
-- `npm run dev`: inicia o ambiente de desenvolvimento com Vite
+- `npm run dev`: inicia o servidor de desenvolvimento
 - `npm run build`: gera a versão de produção em `dist/`
-- `npm run lint`: executa o ESLint no projeto
-- `npm run preview`: visualiza localmente a versão de produção
+- `npm run lint`: executa a análise do ESLint
+- `npm run preview`: executa uma prévia local da build de produção
 
-## Build para Produção
+## Build
 
-Para gerar os arquivos finais:
+Para gerar a versão de produção:
 
 ```bash
 npm run build
 ```
 
-Os arquivos serão criados na pasta `dist/`.
+Os arquivos finais serão gerados na pasta `dist/`.
 
-## Configuração do EmailJS
+## Variáveis de Ambiente
 
-O formulário de contato utiliza o EmailJS. Para funcionar corretamente, configure as três variáveis no arquivo `.env`:
+O formulário de contato usa EmailJS. Configure as variáveis abaixo no arquivo `.env`:
 
 - `VITE_EMAILJS_SERVICE_ID`
 - `VITE_EMAILJS_TEMPLATE_ID`
 - `VITE_EMAILJS_PUBLIC_KEY`
 
-O arquivo `.env` não deve ser enviado para o GitHub.
+O arquivo `.env` está no `.gitignore` e não deve ser enviado para o GitHub.
 
 ## Autor
 
-Edilson Luciano
+**Edilson Luciano**
 
-- GitHub: [@edilson591](https://github.com/edilson591)
+- Site: [devedilson.com.br](https://devedilson.com.br/)
+- GitHub: [@Edilson591](https://github.com/Edilson591)
 - LinkedIn: [edilsonluciano](https://www.linkedin.com/in/edilsonluciano/)

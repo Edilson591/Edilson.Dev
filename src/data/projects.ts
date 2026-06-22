@@ -9,7 +9,8 @@ export const projects: Project[] = [
       "Portfólio pessoal desenvolvido com React, TypeScript, Vite e Tailwind CSS para apresentar projetos, habilidades, experiências e informações de contato.",
     image: "/Imagens/portfolio-screenshot-1.png",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
-    githubUrl: "https://github.com/edilson591/portifolio-com-react",
+    githubUrl: "https://github.com/Edilson591/Edilson.Dev",
+    demoUrl: "https://devedilson.com.br/",
     category: "personal",
     details: {
       longDescription:

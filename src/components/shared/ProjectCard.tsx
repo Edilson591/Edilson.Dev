@@ -124,7 +124,7 @@ export function ProjectCard({ project, index, featured = false }: ProjectCardPro
                     {t.projectCard.viewDetails}
                   </Button>
                 )}
-                {hasLiveDemo && (
+                {/* {hasLiveDemo && (
                   <a
                     href={project.demoUrl}
                     target="_blank"
@@ -147,7 +147,7 @@ export function ProjectCard({ project, index, featured = false }: ProjectCardPro
                       ? t.projectCard.code
                       : t.projectCard.viewCode}
                   </a>
-                )}
+                )} */}
               </div>
             </CardFooter>
           </div>
